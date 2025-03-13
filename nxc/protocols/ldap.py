@@ -587,7 +587,6 @@ class ldap(connection):
                 if "objectSid" in item:
                     sid = self.sid_to_str(item["objectSid"])
                     pprint(sid)
-                    pprint(item)
                     self.sid_domain = "-".join(sid.split("-")[:-1])
                 else:
                     pprint(item)
