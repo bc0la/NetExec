@@ -589,8 +589,8 @@ class ldap(connection):
                     pprint(sid)
                     print(sid)
                     self.sid_domain = "-".join(sid.split("-")[:-1])
-                else:
-                    pprint(item)
+         #       else:
+                   # pprint(item)
             # 2. get all group cn name
             search_filter = "(|(objectSid=" + self.sid_domain + "-512)(objectSid=" + self.sid_domain + "-544)(objectSid=" + self.sid_domain + "-519)(objectSid=S-1-5-32-549)(objectSid=S-1-5-32-551))"
             attributes = ["distinguishedName"]
